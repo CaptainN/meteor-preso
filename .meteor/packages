@@ -19,3 +19,8 @@ shell-server@0.3.0            # Server-side component of the `meteor shell` comm
 audit-argument-checks
 check
 deanius:promise
+accounts-base
+accounts-ui
+accounts-password
+accounts-facebook
+facebook-config-ui
