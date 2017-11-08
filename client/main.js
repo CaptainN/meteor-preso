@@ -12,6 +12,10 @@ Template.hello.helpers({
   counter() {
     return Template.instance().counter.get();
   },
+  players () {
+    import Players from '/imports/api/collections/Players'
+    return Players.find({}).fetch().map(player => player.name).join(', ')
+  }
 });
 
 Template.hello.events({
