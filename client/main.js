@@ -17,6 +17,8 @@ Template.hello.helpers({
     return Players.find({}).fetch().map(player => player.name).join(', ')
   },
   messages () {
+    import { Meteor } from 'meteor/meteor'
+    Meteor.subscribe('public_messages')
     import Messages from '/imports/api/collections/Messages'
     return Messages.find({})
   }
