@@ -13,6 +13,18 @@
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
   <p>{{players}}</p>
+  <p>Messages:</p>
+  <ul>
+    {{#each messages}}
+      <li>{{text}}</li>
+    {{else}}
+      <li>Boooooo! No messages 😢</li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="message-item">
+
 </template>
 
 <template name="info">

@@ -15,6 +15,10 @@ Template.hello.helpers({
   players () {
     import Players from '/imports/api/collections/Players'
     return Players.find({}).fetch().map(player => player.name).join(', ')
+  },
+  messages () {
+    import Messages from '/imports/api/collections/Messages'
+    return Messages.find({})
   }
 });
 
